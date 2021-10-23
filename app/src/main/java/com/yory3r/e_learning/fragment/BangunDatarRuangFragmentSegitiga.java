@@ -1,17 +1,14 @@
 package com.yory3r.e_learning.fragment;
 
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.FragmentBangunDatarRuangSegitigaBinding;
 import com.yory3r.e_learning.model.BangunDatarRuang;
@@ -42,7 +39,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
         title = getArguments().getString("Title");
     }
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
@@ -51,14 +47,11 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
 
         View view = fragmentBangunDatarRuangSegitigaBinding.getRoot();
 
-
         BangunDatarRuang bangunDatarRuang = new BangunDatarRuangDummy().listBangunDatarRuang.get(2);
 
         fragmentBangunDatarRuangSegitigaBinding.tvDeskripsiSegitiga.setText(bangunDatarRuang.getDeskripsiBangun());
         fragmentBangunDatarRuangSegitigaBinding.tvKelilingSegitiga.setText(bangunDatarRuang.getKelilingBangun());
         fragmentBangunDatarRuangSegitigaBinding.tvLuasSegitiga.setText(bangunDatarRuang.getLuasBangun());
-
-
 
         fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiASegitiga.addTextChangedListener(new TextWatcher()
         {
@@ -68,10 +61,7 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -87,7 +77,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
                     sisiA = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiASegitiga.getText().toString());
                     sisiB = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiBSegitiga.getText().toString());
                     sisiC = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiCSegitiga.getText().toString());
-
                 }
             }
 
@@ -108,10 +97,7 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -127,7 +113,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
                     sisiA = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiASegitiga.getText().toString());
                     sisiB = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiBSegitiga.getText().toString());
                     sisiC = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiCSegitiga.getText().toString());
-
                 }
             }
 
@@ -148,10 +133,7 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -167,7 +149,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
                     sisiA = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiASegitiga.getText().toString());
                     sisiB = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiBSegitiga.getText().toString());
                     sisiC = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etKelilingSisiCSegitiga.getText().toString());
-
                 }
             }
 
@@ -187,10 +168,7 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -204,7 +182,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
                 {
                     alas = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etLuasAlasSegitiga.getText().toString());
                     tinggi = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etLuasTinggiSegitiga.getText().toString());
-
                 }
             }
 
@@ -224,10 +201,7 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -241,7 +215,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
                 {
                     alas = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etLuasAlasSegitiga.getText().toString());
                     tinggi = Float.parseFloat(fragmentBangunDatarRuangSegitigaBinding.etLuasTinggiSegitiga.getText().toString());
-
                 }
             }
 
@@ -253,10 +226,6 @@ public class BangunDatarRuangFragmentSegitiga extends Fragment
                 fragmentBangunDatarRuangSegitigaBinding.tvHasilLuasSegitiga.setText(String.valueOf(hasil));
             }
         });
-
-
-
-
 
         return view;
     }

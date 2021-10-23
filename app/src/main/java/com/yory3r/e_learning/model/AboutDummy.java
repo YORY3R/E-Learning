@@ -1,7 +1,6 @@
 package com.yory3r.e_learning.model;
 
 import com.yory3r.e_learning.R;
-
 import java.util.ArrayList;
 
 public class AboutDummy

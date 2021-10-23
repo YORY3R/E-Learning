@@ -2,8 +2,6 @@ package com.yory3r.e_learning.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import com.yory3r.e_learning.model.FirstPage;
 import com.yory3r.e_learning.model.Login;
 
 public class LoginPreferences

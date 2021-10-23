@@ -1,78 +1,45 @@
 package com.yory3r.e_learning.activity;
 
 import static com.yory3r.e_learning.Application.App.CHANNEL_1_ID;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.databinding.DataBindingUtil;
-import androidx.viewpager.widget.ViewPager;
-
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.icu.text.CaseMap;
 import android.os.Bundle;
-import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.adapter.FirstPageAdapter;
 import com.yory3r.e_learning.preferences.FirstPagePreferences;
 import com.yory3r.e_learning.databinding.ActivityFirstPageBinding;
-import com.yory3r.e_learning.preferences.ThemePreferences;
 import com.yory3r.e_learning.receiver.NotificationReceiver;
-
 import java.util.Calendar;
 
 public class FirstPageActivity extends AppCompatActivity
 {
-
     private FirstPageAdapter firstPageAdapter;
     private ActivityFirstPageBinding activityFirstPageBinding;
     private FirstPagePreferences firstPagePreferences;
     private NotificationManagerCompat notificationManagerCompat;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         activityFirstPageBinding = DataBindingUtil.setContentView(this, R.layout.activity_first_page);
         activityFirstPageBinding.setActivityFirstPage(this);
 
         firstPagePreferences = new FirstPagePreferences(this);
+        firstPageAdapter = new FirstPageAdapter(getSupportFragmentManager());
 
         notificationManagerCompat = NotificationManagerCompat.from(this);
 
         checkFirstOpen();
 
-
-        firstPageAdapter = new FirstPageAdapter(getSupportFragmentManager());
-
         activityFirstPageBinding.viewPager.setAdapter(firstPageAdapter);
-
-        activityFirstPageBinding.viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener()
-        {
-            @Override
-            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels)
-            {
-
-            }
-
-            @Override
-            public void onPageSelected(int position)
-            {
-
-            }
-
-            @Override
-            public void onPageScrollStateChanged(int state)
-            {
-
-            }
-        });
-
     }
 
     private void checkFirstOpen()
@@ -113,10 +80,8 @@ public class FirstPageActivity extends AppCompatActivity
 
             NotificationCompat.BigTextStyle bigTextStyle = new NotificationCompat.BigTextStyle();
 
-
             bigTextStyle.bigText("Selamat datang dan selamat bergabung di aplikasi kami");
             bigTextStyle.setSummaryText("Welcome");
-
 
             Intent activityIntent = new Intent(this, FirstPageActivity.class);
             PendingIntent contentIntent = PendingIntent.getActivity(this, 0,activityIntent,0);
@@ -142,7 +107,4 @@ public class FirstPageActivity extends AppCompatActivity
             notificationManagerCompat.notify(1,notification.build());
         }
     }
-
-
-
 }

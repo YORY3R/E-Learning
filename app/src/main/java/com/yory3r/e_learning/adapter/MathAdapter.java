@@ -5,19 +5,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.MathItemBinding;
 import com.yory3r.e_learning.fragment.MathActivityFragmentBangunDatarRuang;
 import com.yory3r.e_learning.fragment.MathActivityFragmentKalkulator;
 import com.yory3r.e_learning.fragment.MathActivityFragmentUrutinBilangan;
 import com.yory3r.e_learning.model.Math;
-
 import java.util.ArrayList;
 
 public class MathAdapter extends RecyclerView.Adapter<MathAdapter.viewHolder>
@@ -65,7 +62,6 @@ public class MathAdapter extends RecyclerView.Adapter<MathAdapter.viewHolder>
                     MathActivityFragmentBangunDatarRuang mathActivityFragmentBangunDatarRuang = new MathActivityFragmentBangunDatarRuang();
 
                     appCompatActivity.getSupportFragmentManager().beginTransaction().replace(R.id.fragmentChangeMath, mathActivityFragmentBangunDatarRuang).addToBackStack(null).commit();
-
                 }
                 else if(holder.getAdapterPosition() == 2)
                 {

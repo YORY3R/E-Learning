@@ -1,22 +1,18 @@
 package com.yory3r.e_learning.fragment;
 
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.FragmentBangunDatarRuangPersegiPanjangBinding;
 import com.yory3r.e_learning.model.BangunDatarRuang;
 import com.yory3r.e_learning.model.BangunDatarRuangDummy;
-
 
 public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
 {
@@ -43,14 +39,13 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
         title = getArguments().getString("Title");
     }
 
-
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
+    {
         fragmentBangunDatarRuangPersegiPanjangBinding = DataBindingUtil.inflate(inflater,R.layout.fragment_bangun_datar_ruang_persegi_panjang,container,false);
         fragmentBangunDatarRuangPersegiPanjangBinding.setFragmentBangunDatarRuangPersegiPanjang(this);
 
         View view = fragmentBangunDatarRuangPersegiPanjangBinding.getRoot();
-
 
         BangunDatarRuang bangunDatarRuang = new BangunDatarRuangDummy().listBangunDatarRuang.get(1);
 
@@ -65,10 +60,7 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -101,10 +93,7 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -130,8 +119,6 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
             }
         });
 
-
-
         fragmentBangunDatarRuangPersegiPanjangBinding.etLuasPanjangPersegiPanjang.addTextChangedListener(new TextWatcher()
         {
             float panjang;
@@ -139,9 +126,7 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -174,9 +159,7 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -201,7 +184,6 @@ public class BangunDatarRuangFragmentPersegiPanjang extends Fragment
                 fragmentBangunDatarRuangPersegiPanjangBinding.tvHasilLuasPersegiPanjang.setText(String.valueOf(hasil));
             }
         });
-
 
         return view;
     }

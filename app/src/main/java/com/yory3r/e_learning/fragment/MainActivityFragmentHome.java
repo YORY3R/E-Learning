@@ -2,14 +2,11 @@ package com.yory3r.e_learning.fragment;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.activity.LordsMobileActivity;
 import com.yory3r.e_learning.activity.MapsActivity;
@@ -28,7 +25,6 @@ public class MainActivityFragmentHome extends Fragment
         fragmentMainActivityHomeBinding.setFragmentMainActivityHome(this);
 
         View view = fragmentMainActivityHomeBinding.getRoot();
-
 
         return view;
     }

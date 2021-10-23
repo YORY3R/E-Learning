@@ -1,23 +1,17 @@
 package com.yory3r.e_learning.fragment;
 
 import static com.yory3r.e_learning.Application.App.CHANNEL_1_ID;
-
-import android.app.PendingIntent;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.room.ColumnInfo;
-
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,18 +19,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.google.android.material.button.MaterialButton;
-import com.yory3r.e_learning.activity.FirstPageActivity;
 import com.yory3r.e_learning.activity.LoginActivity;
-import com.yory3r.e_learning.activity.MainActivity;
-import com.yory3r.e_learning.adapter.RegisterAdapter;
 import com.yory3r.e_learning.database.DatabaseRegister;
 import com.yory3r.e_learning.databinding.FragmentFirstPageRegisterBinding;
 import com.yory3r.e_learning.model.Register;
 import com.yory3r.e_learning.preferences.FirstPagePreferences;
 import com.yory3r.e_learning.R;
-import com.yory3r.e_learning.receiver.NotificationReceiver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -61,7 +49,6 @@ public class FirstPageFragmentRegister extends Fragment
     private String password;
     private String ulangiPassword;
     private FragmentFirstPageRegisterBinding fragmentFirstPageRegisterBinding;
-
 
     public static FirstPageFragmentRegister newInstance(int page, String title)
     {
@@ -92,7 +79,6 @@ public class FirstPageFragmentRegister extends Fragment
 
         firstPagePreferences = new FirstPagePreferences(view.getContext());
 
-
         etNamaLengkap = fragmentFirstPageRegisterBinding.etNamaLengkap;
         etNPM = fragmentFirstPageRegisterBinding.etNPM;
         etNomorTelepon = fragmentFirstPageRegisterBinding.etNomorTelepon;
@@ -100,10 +86,6 @@ public class FirstPageFragmentRegister extends Fragment
         etUsername = fragmentFirstPageRegisterBinding.etUsername;
         etPassword = fragmentFirstPageRegisterBinding.etPassword;
         etUlangiPassword = fragmentFirstPageRegisterBinding.etUlangiPassword;
-
-
-
-
 
         return view;
     }
@@ -166,10 +148,29 @@ public class FirstPageFragmentRegister extends Fragment
                 }
                 else
                 {
-                    addRegister();
-                    pushNotification();
-                    SystemClock.sleep(5000);
-                    gotoLoginActivity(view);
+                    boolean check = true;
+                    List<Register> register = new ArrayList<>();
+
+                    register = DatabaseRegister.getInstance(view.getContext()).getDatabase().registerDao().getAll();
+
+                    for(int a = 0 ; a < register.size() ; a++)
+                    {
+                        if(username.equals(register.get(a).getUsername()))
+                        {
+                            etUsername.setError("User Sudah Ada !");
+
+                            check = false;
+                            break;
+                        }
+                    }
+
+                    if(check == true)
+                    {
+                        addRegister();
+                        pushNotification();
+                        SystemClock.sleep(5000);
+                        gotoLoginActivity(view);
+                    }
                 }
             }
             else if(view.getId() == R.id.btnLogin)

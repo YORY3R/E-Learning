@@ -2,7 +2,6 @@ package com.yory3r.e_learning.database;
 
 import androidx.room.Database;
 import androidx.room.RoomDatabase;
-
 import com.yory3r.e_learning.dao.RegisterDao;
 import com.yory3r.e_learning.model.Register;
 

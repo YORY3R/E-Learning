@@ -2,13 +2,10 @@ package com.yory3r.e_learning.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.ActivityWebBinding;
 
@@ -33,7 +30,6 @@ public class WebActivity extends AppCompatActivity
             public boolean shouldOverrideUrlLoading(WebView webView, String url)
             {
                 activityWebBinding.etUrlWeb.setText(url);
-
                 return false;
             }
 
@@ -43,8 +39,6 @@ public class WebActivity extends AppCompatActivity
                 super.onPageFinished(webView, url);
             }
         });
-
-
     }
 
     public View.OnClickListener btnCLicked = new View.OnClickListener()
@@ -62,8 +56,6 @@ public class WebActivity extends AppCompatActivity
             }
         }
     };
-
-
 
     @Override
     public void onBackPressed()
@@ -83,6 +75,5 @@ public class WebActivity extends AppCompatActivity
                 super.onBackPressed();
             }
         }
-
     }
 }

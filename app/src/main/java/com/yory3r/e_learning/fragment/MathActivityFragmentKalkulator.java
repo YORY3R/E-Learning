@@ -1,22 +1,16 @@
 package com.yory3r.e_learning.fragment;
 
 import android.os.Bundle;
-
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.FragmentMathActivityKalkulatorBinding;
-import com.yory3r.e_learning.model.Kalkulator;
-
 import java.util.ArrayList;
-
 import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 import javax.script.ScriptException;
@@ -27,7 +21,6 @@ public class MathActivityFragmentKalkulator extends Fragment
 
     TextView tvWorkings;
     TextView tvResult;
-
     String workings = "";
     String formula = "";
     String tempFormula = "";

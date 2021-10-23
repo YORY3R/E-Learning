@@ -1,16 +1,12 @@
 package com.yory3r.e_learning.fragment;
 
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.FragmentFirstPageWelcomeBinding;
 
@@ -46,11 +42,6 @@ public class FirstPageFragmentWelcome extends Fragment
 
         View view = fragmentFirstPageWelcomeBinding.getRoot();
 
-
-
-
-
         return view;
-
     }
 }

@@ -9,17 +9,14 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.DialogEditAngkaBinding;
 import com.yory3r.e_learning.databinding.UrutinBilanganItemBinding;
 import com.yory3r.e_learning.model.UrutinBilangan;
-
 import java.util.ArrayList;
 
 public class UrutinBilanganAdapter extends RecyclerView.Adapter<UrutinBilanganAdapter.viewHolder>
@@ -36,7 +33,6 @@ public class UrutinBilanganAdapter extends RecyclerView.Adapter<UrutinBilanganAd
     {
         this.listAngka = listAngka;
         this.context = context;
-
         notifyDataSetChanged();
     }
 
@@ -45,7 +41,6 @@ public class UrutinBilanganAdapter extends RecyclerView.Adapter<UrutinBilanganAd
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         UrutinBilanganItemBinding urutinBilanganItemBinding = DataBindingUtil.inflate(LayoutInflater.from(context),R.layout.urutin_bilangan_item,parent,false);
-
         return new viewHolder(urutinBilanganItemBinding);
     }
 
@@ -60,7 +55,6 @@ public class UrutinBilanganAdapter extends RecyclerView.Adapter<UrutinBilanganAd
             public void onClick(View view)
             {
                 int position = holder.getAdapterPosition();
-
                 dialogEdit(view,FtoS(listAngka.get(position).getAngka()),position);
             }
         });
@@ -71,7 +65,6 @@ public class UrutinBilanganAdapter extends RecyclerView.Adapter<UrutinBilanganAd
             public void onClick(View view)
             {
                 int position = holder.getAdapterPosition();
-
                 listAngka.remove(position);
                 notifyDataSetChanged();
             }
@@ -91,7 +84,6 @@ public class UrutinBilanganAdapter extends RecyclerView.Adapter<UrutinBilanganAd
         public viewHolder(@NonNull UrutinBilanganItemBinding urutinBilanganItemBinding)
         {
             super(urutinBilanganItemBinding.getRoot());
-
             this.urutinBilanganItemBinding = urutinBilanganItemBinding;
         }
     }

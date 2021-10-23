@@ -3,16 +3,13 @@ package com.yory3r.e_learning.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
-
 import android.os.Bundle;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.adapter.MathAdapter;
 import com.yory3r.e_learning.databinding.ActivityMathBinding;
 import com.yory3r.e_learning.fragment.MathActivityFragmentKalkulator;
 import com.yory3r.e_learning.model.Math;
 import com.yory3r.e_learning.model.MathDummy;
-
 import java.util.ArrayList;
 
 public class MathActivity extends AppCompatActivity

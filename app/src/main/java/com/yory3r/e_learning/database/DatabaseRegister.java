@@ -1,7 +1,6 @@
 package com.yory3r.e_learning.database;
 
 import android.content.Context;
-
 import androidx.room.Room;
 
 public class DatabaseRegister

@@ -1,29 +1,20 @@
 package com.yory3r.e_learning.adapter;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.AsyncTask;
-import android.os.SystemClock;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.bumptech.glide.Glide;
 import com.google.android.material.snackbar.Snackbar;
 import com.yory3r.e_learning.R;
-import com.yory3r.e_learning.activity.LoginActivity;
 import com.yory3r.e_learning.database.DatabaseRegister;
 import com.yory3r.e_learning.databinding.DialogEditBinding;
 import com.yory3r.e_learning.databinding.RegisterItemBinding;
@@ -38,7 +29,6 @@ public class RegisterAdapter extends RecyclerView.Adapter<RegisterAdapter.viewHo
     private Context context;
     private int ID;
     private RegisterItemBinding registerItemBinding;
-    private LoginActivity loginActivity;
     private Register register;
     private String temp;
 

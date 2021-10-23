@@ -1,12 +1,10 @@
 package com.yory3r.e_learning.fragment;
 
 import android.os.Bundle;
-
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,13 +12,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.adapter.UrutinBilanganAdapter;
 import com.yory3r.e_learning.databinding.FragmentMathActivityUrutinBilanganBinding;
 import com.yory3r.e_learning.model.UrutinBilangan;
-
 import java.util.ArrayList;
 
 public class MathActivityFragmentUrutinBilangan extends Fragment implements View.OnClickListener
@@ -190,11 +186,6 @@ public class MathActivityFragmentUrutinBilangan extends Fragment implements View
         setMean(angka);
         setMedian(angka);
         setModus(angka);
-
-
-
-
-
 
         initAdapter(listAngka);
         setAdapter(urutinBilanganAdapter);

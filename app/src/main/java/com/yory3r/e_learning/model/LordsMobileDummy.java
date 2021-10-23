@@ -60,7 +60,6 @@ public class LordsMobileDummy
         listLordsMobile.add(hero50);
         listLordsMobile.add(hero51);
         listLordsMobile.add(hero52);
-
     }
 
     public static final LordsMobile hero1 = new LordsMobile("Boommeister","https://static.wikia.nocookie.net/lordsmobile/images/a/a2/Boommeister.png/revision/latest/scale-to-width-down/350?cb=20200308165732");

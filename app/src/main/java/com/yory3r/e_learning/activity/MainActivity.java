@@ -5,23 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.MenuItem;
-import android.widget.Toast;
-
-import com.google.android.material.appbar.AppBarLayout;
-import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.yory3r.e_learning.R;
-import com.yory3r.e_learning.fragment.FirstPageFragmentTheme;
 import com.yory3r.e_learning.fragment.MainActivityFragmentAbout;
 import com.yory3r.e_learning.fragment.MainActivityFragmentHome;
 import com.yory3r.e_learning.fragment.MainActivityFragmentProfil;
-import com.yory3r.e_learning.model.FirstPage;
-import com.yory3r.e_learning.preferences.FirstPagePreferences;
 import com.yory3r.e_learning.databinding.ActivityMainBinding;
 import com.yory3r.e_learning.preferences.LoginPreferences;
 import com.yory3r.e_learning.preferences.ThemePreferences;
@@ -42,7 +33,6 @@ public class MainActivity extends AppCompatActivity
         loginPreferences = new LoginPreferences(MainActivity.this);
         themePreferences = new ThemePreferences(MainActivity.this);
 
-
         checkLogin();
         checkTheme();
 
@@ -50,8 +40,6 @@ public class MainActivity extends AppCompatActivity
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentChange,mainActivityFragmentHome).commit();
 
         activityMainBinding.topAppBar.setTitle("Halo " + loginPreferences.getUserLogin().getUsername());
-
-
     }
 
     public Toolbar.OnMenuItemClickListener topAppBar = new Toolbar.OnMenuItemClickListener()
@@ -68,16 +56,13 @@ public class MainActivity extends AppCompatActivity
             {
                 Intent intent = new Intent(MainActivity.this,SettingActivity.class);
                 startActivity(intent);
-
-
             }
             else if(item.getItemId() == R.id.topLogout)
             {
-
                 loginPreferences.Logout();
                 checkLogin();
-                Toast.makeText(getApplicationContext(), "Hapus Data", Toast.LENGTH_SHORT).show();
             }
+
             return true;
         }
     };
@@ -106,9 +91,7 @@ public class MainActivity extends AppCompatActivity
 
             return true;
         }
-
     };
-
 
     private void checkLogin()
     {

@@ -1,18 +1,14 @@
 package com.yory3r.e_learning.fragment;
 
 import android.os.Bundle;
-
 import androidx.annotation.Nullable;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
-
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.FragmentBangunDatarRuangPersegiBinding;
 import com.yory3r.e_learning.model.BangunDatarRuang;
@@ -63,10 +59,7 @@ public class BangunDatarRuangFragmentPersegi extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)
@@ -96,10 +89,7 @@ public class BangunDatarRuangFragmentPersegi extends Fragment
             float hasil;
 
             @Override
-            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2)
-            {
-
-            }
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2){}
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2)

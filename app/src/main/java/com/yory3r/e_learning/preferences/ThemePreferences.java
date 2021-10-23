@@ -2,8 +2,6 @@ package com.yory3r.e_learning.preferences;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-
-import com.yory3r.e_learning.model.Login;
 import com.yory3r.e_learning.model.Theme;
 
 public class ThemePreferences
@@ -38,7 +36,6 @@ public class ThemePreferences
 
         return new Theme(themeName);
     }
-
 
     public boolean checkTheme()
     {

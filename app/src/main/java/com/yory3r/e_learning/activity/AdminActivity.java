@@ -4,27 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
-import com.yory3r.e_learning.adapter.RegisterAdapter;
 import com.yory3r.e_learning.adapter.RegisterAdapterAdmin;
 import com.yory3r.e_learning.database.DatabaseRegister;
 import com.yory3r.e_learning.databinding.ActivityAdminBinding;
-import com.yory3r.e_learning.fragment.MainActivityFragmentProfil;
 import com.yory3r.e_learning.model.Register;
-
 import java.util.List;
 
 public class AdminActivity extends AppCompatActivity
 {
     private ActivityAdminBinding activityAdminBinding;
     private RecyclerView rvRegisterListAdmin;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -36,16 +29,7 @@ public class AdminActivity extends AppCompatActivity
         rvRegisterListAdmin = activityAdminBinding.rvtemp;
         rvRegisterListAdmin.setLayoutManager(new LinearLayoutManager(this));
 
-
-        activityAdminBinding.btnBackAdmin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "TEST", Toast.LENGTH_SHORT).show();
-            }
-        });
-
         getRegister();
-
     }
 
     public View.OnClickListener btnClicked = new View.OnClickListener()

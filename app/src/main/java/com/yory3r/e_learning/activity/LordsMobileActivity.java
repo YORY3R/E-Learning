@@ -5,7 +5,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
@@ -14,14 +13,12 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-
 import com.google.android.material.navigation.NavigationView;
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.ActivityLordsMobileBinding;
 
 public class LordsMobileActivity extends AppCompatActivity
 {
-
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityLordsMobileBinding activityLordsMobileBinding;
 
@@ -50,16 +47,12 @@ public class LordsMobileActivity extends AppCompatActivity
             public boolean onMenuItemClick(MenuItem menuItem)
             {
                 finish();
-
                 return true;
             }
         });
 
         DrawerLayout drawer = activityLordsMobileBinding.drawerLayout;
         NavigationView navigationView = activityLordsMobileBinding.navView;
-
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
 
         mAppBarConfiguration = new AppBarConfiguration.Builder(
                 R.id.nav_home, R.id.nav_gallery)
@@ -74,9 +67,7 @@ public class LordsMobileActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.lords_mobile, menu);
-
         return true;
     }
 
@@ -84,7 +75,6 @@ public class LordsMobileActivity extends AppCompatActivity
     public boolean onSupportNavigateUp()
     {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_lords_mobile);
-
         return NavigationUI.navigateUp(navController, mAppBarConfiguration) || super.onSupportNavigateUp();
     }
 }

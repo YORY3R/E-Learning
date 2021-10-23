@@ -5,9 +5,7 @@ import androidx.room.Delete;
 import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
-
 import com.yory3r.e_learning.model.Register;
-
 import java.util.List;
 
 @Dao

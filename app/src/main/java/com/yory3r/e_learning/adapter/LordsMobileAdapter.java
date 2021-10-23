@@ -3,16 +3,13 @@ package com.yory3r.e_learning.adapter;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.bumptech.glide.Glide;
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.GalleryItemBinding;
 import com.yory3r.e_learning.model.LordsMobile;
-
 import java.util.ArrayList;
 
 public class LordsMobileAdapter extends RecyclerView.Adapter<LordsMobileAdapter.viewHolder>
@@ -31,7 +28,6 @@ public class LordsMobileAdapter extends RecyclerView.Adapter<LordsMobileAdapter.
     public viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         GalleryItemBinding galleryItemBinding = DataBindingUtil.inflate(LayoutInflater.from(parent.getContext()), R.layout.gallery_item,parent,false);
-
         return new viewHolder(galleryItemBinding);
     }
 
@@ -54,10 +50,10 @@ public class LordsMobileAdapter extends RecyclerView.Adapter<LordsMobileAdapter.
     public class viewHolder extends RecyclerView.ViewHolder
     {
         private GalleryItemBinding galleryItemBinding;
+
         public viewHolder(@NonNull GalleryItemBinding galleryItemBinding)
         {
             super(galleryItemBinding.getRoot());
-
             this.galleryItemBinding = galleryItemBinding;
         }
     }

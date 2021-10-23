@@ -3,8 +3,6 @@ package com.yory3r.e_learning.preferences;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import com.yory3r.e_learning.model.FirstPage;
-
 public class FirstPagePreferences
 {
     SharedPreferences sharedPreferences;
@@ -28,7 +26,6 @@ public class FirstPagePreferences
         editor.putString(KEY_FIRSTOPEN,isOpen);
         editor.commit();
     }
-
 
     public boolean checkFirstOpen()
     {

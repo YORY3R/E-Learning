@@ -1,25 +1,20 @@
 package com.yory3r.e_learning.adapter;
 
 import android.content.Context;
-import android.hardware.camera2.TotalCaptureResult;
 import android.os.AsyncTask;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.google.android.material.snackbar.Snackbar;
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.database.DatabaseRegister;
 import com.yory3r.e_learning.databinding.RegisterItemAdminBinding;
-import com.yory3r.e_learning.model.About;
 import com.yory3r.e_learning.model.Register;
 import com.yory3r.e_learning.preferences.LoginPreferences;
-
 import java.util.List;
 
 public class RegisterAdapterAdmin extends RecyclerView.Adapter<RegisterAdapterAdmin.viewHolder>
@@ -100,7 +95,6 @@ public class RegisterAdapterAdmin extends RecyclerView.Adapter<RegisterAdapterAd
                 }
             }
         });
-
     }
 
     @Override

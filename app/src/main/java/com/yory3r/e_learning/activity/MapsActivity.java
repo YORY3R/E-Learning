@@ -4,12 +4,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.databinding.DataBindingUtil;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
-
 import com.mapbox.android.core.permissions.PermissionsListener;
 import com.mapbox.android.core.permissions.PermissionsManager;
 import com.mapbox.mapboxsdk.Mapbox;
@@ -18,7 +15,6 @@ import com.mapbox.mapboxsdk.location.LocationComponentActivationOptions;
 import com.mapbox.mapboxsdk.location.LocationComponentOptions;
 import com.mapbox.mapboxsdk.location.modes.CameraMode;
 import com.mapbox.mapboxsdk.location.modes.RenderMode;
-import com.mapbox.mapboxsdk.maps.MapView;
 import com.mapbox.mapboxsdk.maps.MapboxMap;
 import com.mapbox.mapboxsdk.maps.OnMapReadyCallback;
 import com.mapbox.mapboxsdk.maps.Style;
@@ -43,7 +39,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         activityMapsBinding = DataBindingUtil.setContentView(this,R.layout.activity_maps);
         activityMapsBinding.setActivityMaps(this);
-
 
         activityMapsBinding.mapView.onCreate(savedInstanceState);
         activityMapsBinding.mapView.getMapAsync(this);
@@ -166,7 +161,6 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         if(PermissionsManager.areLocationPermissionsGranted(this))
         {
             LocationComponentOptions customLocationComponentOptions = LocationComponentOptions.builder(this).pulseEnabled(true).build();
-
             LocationComponent locationComponent = mapboxMap.getLocationComponent();
             locationComponent.activateLocationComponent(LocationComponentActivationOptions.builder(this,loadedMapStyle).locationComponentOptions(customLocationComponentOptions).build());
             locationComponent.setLocationComponentEnabled(true);

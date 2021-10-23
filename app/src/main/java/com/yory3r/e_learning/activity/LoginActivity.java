@@ -3,12 +3,10 @@ package com.yory3r.e_learning.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.databinding.DataBindingUtil;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.database.DatabaseRegister;
 import com.yory3r.e_learning.databinding.ActivityLoginBinding;
@@ -16,7 +14,6 @@ import com.yory3r.e_learning.model.Register;
 import com.yory3r.e_learning.preferences.FirstPagePreferences;
 import com.yory3r.e_learning.preferences.LoginPreferences;
 import com.yory3r.e_learning.preferences.ThemePreferences;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,7 +22,6 @@ public class LoginActivity extends AppCompatActivity
     private FirstPagePreferences firstPagePreferences;
     private LoginPreferences loginPreferences;
     private ThemePreferences themePreferences;
-
     private ActivityLoginBinding activityLoginBinding;
     private Intent intent;
     private int extraID;
@@ -44,10 +40,6 @@ public class LoginActivity extends AppCompatActivity
         checkFirstOpen();
         checkLogin();
         checkTheme();
-
-
-
-
     }
 
     public View.OnClickListener btnClicked = new View.OnClickListener()

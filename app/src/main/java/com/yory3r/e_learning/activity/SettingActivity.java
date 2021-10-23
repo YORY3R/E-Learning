@@ -2,10 +2,8 @@ package com.yory3r.e_learning.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
-
 import android.os.Bundle;
 import android.view.View;
-
 import com.yory3r.e_learning.R;
 import com.yory3r.e_learning.databinding.ActivitySettingBinding;
 import com.yory3r.e_learning.fragment.FirstPageFragmentTheme;
@@ -35,5 +33,4 @@ public class SettingActivity extends AppCompatActivity
             }
         }
     };
-
 }

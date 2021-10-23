@@ -1,29 +1,19 @@
 package com.yory3r.e_learning.fragment;
 
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
-
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
-
 import com.yory3r.e_learning.R;
-import com.yory3r.e_learning.adapter.AboutAdapter;
 import com.yory3r.e_learning.adapter.RegisterAdapter;
 import com.yory3r.e_learning.database.DatabaseRegister;
 import com.yory3r.e_learning.databinding.FragmentMainActivityProfilBinding;
-import com.yory3r.e_learning.model.About;
-import com.yory3r.e_learning.model.AboutDummy;
 import com.yory3r.e_learning.model.Register;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivityFragmentProfil extends Fragment

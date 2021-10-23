@@ -1,15 +1,9 @@
 package com.yory3r.e_learning.adapter;
 
-import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
-
-import com.yory3r.e_learning.fragment.BangunDatarRuangFragmentPersegi;
-import com.yory3r.e_learning.fragment.BangunDatarRuangFragmentPersegiPanjang;
-import com.yory3r.e_learning.fragment.BangunDatarRuangFragmentSegitiga;
 import com.yory3r.e_learning.fragment.FirstPageFragmentRegister;
 import com.yory3r.e_learning.fragment.FirstPageFragmentTheme;
 import com.yory3r.e_learning.fragment.FirstPageFragmentWelcome;
