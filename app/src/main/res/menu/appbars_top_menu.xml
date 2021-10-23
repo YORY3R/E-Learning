@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/topAdmin"
+        android:title="."
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/topPengaturan"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Pengaturan"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/topLogout"
+        android:icon="@drawable/ic_baseline_delete_forever_24"
+        android:title="Logout"
+        app:showAsAction="never" />
+
+</menu>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="mathItem"
+            type="com.yory3r.e_learning.adapter.MathAdapter" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="#00FFFFFF"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="0dp"
+            app:contentPadding="3dp">
+
+            <Button
+                android:id="@+id/btnMath"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:insetTop="0dp"
+                android:insetBottom="0dp" />
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+</layout>

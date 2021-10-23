@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22395833333333334" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/drawable/ic_baseline_delete_forever_24.xml" value="0.22395833333333334" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.22395833333333334" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/drawable/splash_brand_logo.xml" value="0.35462962962962963" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/drawable/splash_screen_brand_logo.xml" value="1.0" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/about_item.xml" value="0.5" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_admin.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_first_page.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_lords_mobile.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_maps.xml" value="0.2116564417177914" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_math.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_setting.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/activity_web.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/app_bar_lords_mobile.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/content_lords_mobile.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/dialog_edit.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/dialog_edit_angka.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_bangun_datar_ruang_persegi.xml" value="0.30128205128205127" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_bangun_datar_ruang_persegi_panjang.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_bangun_datar_ruang_segitiga.xml" value="0.30128205128205127" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_first_page.xml" value="0.20625" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_first_page_register.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_first_page_theme.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_first_page_welcome.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_gallery.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_home.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_main_activity_about.xml" value="0.36614583333333334" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_main_activity_home.xml" value="0.36614583333333334" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_main_activity_profil.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_math_activity_bangun_datar.xml" value="0.30128205128205127" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_math_activity_bangun_datar_ruang.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_math_activity_kalkulator.xml" value="0.264" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_math_activity_urutin_bilangan.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/fragment_slideshow.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/gallery_item.xml" value="0.2" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/math_item.xml" value="0.30128205128205127" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/nav_header_lords_mobile.xml" value="0.20897435897435898" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/register_item.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/register_item_admin.xml" value="0.33" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/layout/urutin_bilangan_item.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/menu/activity_lords_mobile_drawer.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/menu/activity_main_drawer.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/menu/appbars_bottom_menu.xml" value="0.20572916666666666" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/menu/appbars_top_menu.xml" value="0.25" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/menu/lords_mobile.xml" value="0.1" />
+        <entry key="..\:/Aplikasi/Android/Project/ELearning/app/src/main/res/menu/maps_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

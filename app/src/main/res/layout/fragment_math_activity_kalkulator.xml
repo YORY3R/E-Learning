@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="fragmentMathActivityKalkulator"
+            type="com.yory3r.e_learning.fragment.MathActivityFragmentKalkulator" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#252525"
+        tools:context=".fragment.MathActivityFragmentKalkulator">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:paddingRight="30dp"
+                android:layout_weight="1"
+
+                android:textColor="@color/white"
+                android:text=""
+                android:layout_gravity="end"
+                android:textAlignment="textEnd"
+                android:textSize="30sp"
+                android:id="@+id/tvWorking"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:paddingRight="30dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+
+                android:textColor="@color/white"
+                android:text=""
+                android:textAlignment="textEnd"
+                android:layout_gravity="end"
+                android:textSize="45sp"
+                android:id="@+id/tvResult"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.clearOnClick}"
+                    android:text="C"
+                    android:textColor="#D50000"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.bracketsOnClick}"
+                    android:text="()"
+                    android:textColor="#FFFF6D00"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.powerOfOnClick}"
+                    android:text="^"
+                    android:textColor="#FFFF6D00"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.divisionOnClick}"
+                    android:text="/"
+                    android:textColor="#FFFF6D00"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.sevenOnClick}"
+                    android:text="7"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.eightOnClick}"
+                    android:text="8"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.nineOnClick}"
+                    android:text="9"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.timesOnClick}"
+                    android:text="X"
+                    android:textColor="#FFFF6D00"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.fourOnClick}"
+                    android:text="4"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.fiveOnClick}"
+                    android:text="5"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.sixOnClick}"
+                    android:text="6"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.minusOnClick}"
+                    android:text="-"
+                    android:textColor="#FFFF6D00"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.oneOnClick}"
+                    android:text="1"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.twoOnClick}"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.threeOnClick}"
+                    android:text="3"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.plusOnClick}"
+                    android:text="+"
+                    android:textColor="#FFFF6D00"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.decimalOnClick}"
+                    android:text="."
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.zeroOnClick}"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:textSize="25sp" />
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="2"
+                    android:background="#FFFF6D00"
+                    android:insetTop="0dp"
+                    android:insetBottom="0dp"
+                    android:onClick="@{fragmentMathActivityKalkulator.equalsOnClick}"
+                    android:text="="
+                    android:textColor="@color/white"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>
